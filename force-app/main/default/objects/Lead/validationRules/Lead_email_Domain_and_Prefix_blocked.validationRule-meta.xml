@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_email_Domain_and_Prefix_blocked</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    REGEX(
+        LOWER(Email),
+        &quot;.*\\.(games|garden|glass|free|talk)$&quot;
+    ),
+    BEGINS(LOWER(Email), &quot;info@&quot;),
+    BEGINS(LOWER(Email), &quot;contact@&quot;),
+    BEGINS(LOWER(Email), &quot;career@&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>This email address is not allowed. Please enter a valid email address with an allowed domain and prefix.</errorMessage>
+</ValidationRule>

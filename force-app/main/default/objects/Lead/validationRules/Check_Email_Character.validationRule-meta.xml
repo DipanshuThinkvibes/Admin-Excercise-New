@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Email_Character</fullName>
+    <active>true</active>
+    <errorConditionFormula>CONTAINS(
+    LOWER(MID(Email, 5, 8)),
+    &quot;a&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>You Can&apos;t be able to save the record.because email contain character a between 5 to 12</errorMessage>
+</ValidationRule>

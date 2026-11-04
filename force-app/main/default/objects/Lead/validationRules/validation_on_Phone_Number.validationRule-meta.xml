@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validation_on_Phone_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Country__c, &quot;United States&quot;),
+    NOT(ISBLANK(Phone)),
+    LEN(Phone) &lt;&gt; 10
+)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>phone numbers Must be populate If the country is United States.</errorMessage>
+</ValidationRule>

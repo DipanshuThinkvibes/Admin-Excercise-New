@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Training Record Type Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <info>&lt;p&gt;Prepare and share a detailed proposal covering the scope of services, pricing, delivery schedule, and expected outcomes. Address the customer&amp;#39;s questions and confirm the next steps.&lt;/p&gt;</info>
+        <picklistValueName>Id. Decision Makers</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <info>&lt;p&gt;Understand the customer&amp;#39;s specific requirements and challenges. For Training, identify skill gaps and learning objectives. For Consulting, identify business problems and expected outcomes.&lt;/p&gt;</info>
+        <picklistValueName>Needs Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <info>&lt;p&gt;Identify potential customers who may be interested in GoC&amp;#39;s Training or Consulting services. Contact prospects, understand their initial interests, and establish communication.&lt;/p&gt;</info>
+        <picklistValueName>Prospecting</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <info>&lt;p&gt;Confirm the customer&amp;#39;s business needs, budget, decision-makers, and expected timeline. Determine whether the opportunity is a good fit for GoC&amp;#39;s services.&lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <info>&lt;p&gt;Explain how GoC&amp;#39;s Training or Consulting services will address the customer&amp;#39;s needs. Highlight key benefits, expected results, and the value delivered to the business.&lt;/p&gt;</info>
+        <picklistValueName>Value Proposition</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Training</recordTypeName>
+</PathAssistant>
